@@ -7,7 +7,23 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+<!-- CART SIDEBAR -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>🛒 Votre Panier</h3>
+    <button class="cart-close" id="cartClose">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Votre panier est vide ☕</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      Total : <span id="cartTotal">$0.00</span>
+    </div>
+    <button class="checkout-btn" id="checkoutBtn">Commander ↗</button>
+  </div>
+</div>
+<div class="cart-overlay" id="cartOverlay"></div>
 <!-- NAVBAR -->
 <nav class="navbar">
   <ul>
@@ -173,5 +189,7 @@
 </section>
 
 <script src="./script.js"></script>
+<body>
+
 </body>
 </html>
