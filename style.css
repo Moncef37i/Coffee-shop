@@ -1467,14 +1467,6 @@ body {
   box-shadow: 0 8px 25px rgba(244,180,0,0.4);
 }
 
-/* SUCCESS MESSAGE */
-.form-success {
-  display: none;
-  text-align: center;
-  padding: 40px 20px;
-  animation: popIn 0.4s ease;
-}
-
 .form-success.show { display: block; }
 
 .form-success-icon { font-size: 60px; margin-bottom: 15px; }
@@ -1800,3 +1792,4 @@ img, iframe, .coffee-container, .hero-left, .hero-right {
   display: none !important;
   visibility: hidden !important;
 }
+
