@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - Coffee Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- CART SIDEBAR -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>🛒 Votre Panier</h3>
+    <button class="cart-close" id="cartClose">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Votre panier est vide ☕</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      Total : <span id="cartTotal">$0.00</span>
+    </div>
+    <button class="checkout-btn" id="checkoutBtn">Commander ↗</button>
+  </div>
+</div>
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="reviews.html">Avis</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-logo">Coffee Shop</div>
+<div class="nav-right">
+  <div class="cart-icon-nav" id="cartIcon">
+    🛒 <span class="cart-count" id="cartCount">0</span>
+  </div>
+  <a href="menu.html" class="nav-cta">Commander Maintenant ↗</a>
+</div>
+</nav>
+
+<!-- HERO / WELCOME -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Welcome to <span>Coffee Shop</span></h1>
+    <p>Experience the rich aroma and smooth taste crafted perfectly in every cup.</p>
+    <a href="menu.html" class="hero-btn">Commander Maintenant</a>
+  </div>
+</section>
+
+</section>
+<!-- POPULAR FLAVORS SECTION -->
+<section class="flavors-section">
+
+  <div class="flavors-header">
+    <h2 class="flavors-title">Popular Flavors</h2>
+    <a href="menu.html" class="view-all-btn">View All ↗</a>
+  </div>
+
+     <div class="flavors-cards">
+
+      <div class="flavor-card">
+      <div class="flavor-img-wrap">
+        <img src="images/cappuccino.png" alt="Cappuccino">
+      </div>
+      <div class="flavor-info">
+        <div class="flavor-price">€12.99</div>
+        <h3 class="flavor-name">Cappuccino</h3>
+        <p class="flavor-desc">Smooth espresso topped with velvety steamed milk foam bold, rich and perfectly balanced.</p>
+      </div>
+    </div>
+
+     <div class="flavor-card center-card">
+      <div class="flavor-img-wrap">
+        <img src="images/mocha.png" alt="Mocha">
+      </div>
+      <div class="flavor-info">
+        <div class="flavor-price">€14.99</div>
+        <h3 class="flavor-name">Mocha</h3>
+        <p class="flavor-desc">Rich chocolate meets bold espresso, topped with whipped cream pure indulgence in every sip.</p>
+      </div>
+
+    </div>
+    <div class="flavor-card">
+      <div class="flavor-img-wrap">
+        <img src="images/macchiato.png" alt="Macchiato">
+      </div>
+      <div class="flavor-info">
+        <div class="flavor-price">€13.99</div>
+        <h3 class="flavor-name">Macchiato</h3>
+        <p class="flavor-desc">Intense espresso with a bold kick, marked with a touch of frothy milk for a perfect finish.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Gold wave bottom border -->
+  <div class="flavors-wave">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C200,80 400,0 600,40 C800,80 1000,0 1200,40 C1300,60 1380,30 1440,40 L1440,80 L0,80 Z" fill="#f4b400"/>
+    </svg>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

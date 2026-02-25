@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Coffee Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="reviews.html">Avis</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-logo">Coffee Shop</div>
+ <div class="nav-right">
+  <div class="cart-icon-nav" id="cartIcon">
+    🛒 <span class="cart-count" id="cartCount">0</span>
+  </div>
+  <a href="menu.html" class="nav-cta">Commander Maintenant ↗</a>
+</div>
+</nav>
+
+<!-- CONTACT HERO -->
+<section class="contact-hero">
+  <h1>Nous <span>Contacter</span></h1>
+  <p>Une question ? Une commande spéciale ? On vous répond sous 24h !</p>
+</section>
+
+<!-- MAIN CONTACT SECTION -->
+<section class="contact-main">
+
+  <!-- LEFT — INFO -->
+  <div class="contact-left">
+
+    <div class="contact-info-block">
+      <h2>Venez nous voir <span>☕</span></h2>
+      <p>Nous serions ravis de vous accueillir dans notre café et de vous faire découvrir nos meilleures boissons.</p>
+    </div>
+
+    <!-- INFO CARDS -->
+    <div class="info-cards">
+
+      <div class="info-card">
+        <div class="info-card-icon">📍</div>
+        <div>
+          <strong>Adresse</strong>
+          <span>12 Rue du Café, Paris 75001</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon">📞</div>
+        <div>
+          <strong>Téléphone</strong>
+          <span>+33 1 23 45 67 89</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon">✉️</div>
+        <div>
+          <strong>Email</strong>
+          <span>coffeshop12@gmail.com</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div class="hours-block">
+      <h3>🕐 Horaires d'ouverture</h3>
+      <div class="hours-list">
+        <div class="hours-row">
+          <span>Lundi — Vendredi</span>
+          <span class="hours-time">07:00 — 20:00</span>
+        </div>
+        <div class="hours-row">
+          <span>Samedi</span>
+          <span class="hours-time">08:00 — 21:00</span>
+        </div>
+        <div class="hours-row">
+          <span>Dimanche</span>
+          <span class="hours-time">09:00 — 18:00</span>
+        </div>
+        <div class="hours-row today">
+          <span>Aujourd'hui</span>
+          <span class="hours-open">● Ouvert maintenant</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.3470599!3d48.8600000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1600000000000!5m2!1sfr!2sfr"
+        width="100%"
+        height="220"
+        style="border:0; border-radius:16px;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- RIGHT — FORM -->
+  <div class="contact-right">
+    <div class="contact-form-wrap">
+      <h3>Envoyez-nous un message</h3>
+      <p>Remplissez le formulaire et nous vous répondrons dans les plus brefs délais.</p>
+
+      <form id="contactForm">
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label>Prénom</label>
+            <input type="text" placeholder="Jean" required>
+          </div>
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" placeholder="Dupont" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="jean@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Téléphone <span class="optional">(optionnel)</span></label>
+          <input type="tel" placeholder="+33 6 00 00 00 00">
+        </div>
+
+        <div class="form-group">
+          <label>Sujet</label>
+          <select>
+            <option value="">Choisissez un sujet...</option>
+            <option>Question générale</option>
+            <option>Commande spéciale</option>
+            <option>Réservation de groupe</option>
+            <option>Partenariat</option>
+            <option>Autre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Votre message ici..." required></textarea>
+        </div>
+
+        <button type="submit" class="contact-submit-btn">
+          Envoyer le message ✉️
+        </button>
+
+      </form>
+
+      <!-- SUCCESS MESSAGE -->
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">✅</div>
+        <h4>Message envoyé !</h4>
+        <p>Merci de nous avoir contacté. Nous vous répondrons sous 24h.</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

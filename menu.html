@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu - Coffee Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="reviews.html">Avis</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-logo">Coffee Shop</div>
+  <div class="nav-right">
+  <div class="cart-icon-nav" id="cartIcon">
+    🛒 <span class="cart-count" id="cartCount">0</span>
+  </div>
+  <a href="menu.html" class="nav-cta">Commander Maintenant ↗</a>
+</div>
+</nav>
+
+<!-- MENU HERO HEADER -->
+<section class="menu-hero">
+  <div class="menu-hero-text">
+    <h1>Notre <span>Menu</span></h1>
+    <p>14 boissons soigneusement sélectionnées — du classique au raffiné.</p>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div class="filter-tabs">
+    <button class="tab active" data-filter="all">Tous</button>
+    <button class="tab" data-filter="classic">Classiques</button>
+    <button class="tab" data-filter="cold">Froids</button>
+    <button class="tab" data-filter="special">Spéciaux</button>
+  </div>
+</section>
+
+<!-- MENU CARDS GRID -->
+<section class="menu-grid">
+
+  <!-- CLASSICS -->
+  <div class="menu-card" data-category="classic">
+    <div class="menu-img-wrap">
+      <img src="images/espresso.png" alt="Espresso">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€4.99</div>
+      <h3>Espresso</h3>
+      <p>Pure and intense — a bold single shot of perfection.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="classic">
+    <div class="menu-img-wrap">
+      <img src="images/latte.png" alt="Latte">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€6.99</div>
+      <h3>Latte</h3>
+      <p>Creamy espresso with silky steamed milk, smooth and light.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="classic">
+    <div class="menu-img-wrap">
+      <img src="images/cappuccino.png" alt="Cappuccino">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€5.99</div>
+      <h3>Cappuccino</h3>
+      <p>Velvety foam on rich espresso — bold and balanced.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="classic">
+    <div class="menu-img-wrap">
+      <img src="images/americano.png" alt="Americano">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€4.49</div>
+      <h3>Americano</h3>
+      <p>Espresso diluted with hot water — strong yet smooth.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="classic">
+    <div class="menu-img-wrap">
+      <img src="images/macchiato.png" alt="Macchiato">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€5.49</div>
+      <h3>Macchiato</h3>
+      <p>Espresso marked with a touch of frothy milk.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="classic">
+    <div class="menu-img-wrap">
+      <img src="images/mocha.png" alt="Mocha">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€6.49</div>
+      <h3>Mocha</h3>
+      <p>Rich chocolate meets bold espresso with whipped cream.</p>
+    </div>
+  </div>
+
+ 
+
+  <div class="menu-card" data-category="classic">
+    <div class="menu-img-wrap">
+      <img src="images/cortado.png" alt="Cortado">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€5.49</div>
+      <h3>Cortado</h3>
+      <p>Equal parts espresso and warm milk — perfectly balanced.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="classic">
+    <div class="menu-img-wrap">
+      <img src="images/ristretto.png" alt="Ristretto">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€4.99</div>
+      <h3>Ristretto</h3>
+      <p>Ultra-short, intensely concentrated espresso shot.</p>
+    </div>
+  </div>
+
+  <!-- COLD -->
+  <div class="menu-card" data-category="cold">
+    <div class="menu-img-wrap">
+      <img src="images/coldbrew.png" alt="Cold Brew">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€7.49</div>
+      <h3>Cold Brew</h3>
+      <p>Slow-steeped 24h for a smooth, rich cold taste.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="cold">
+    <div class="menu-img-wrap">
+      <img src="images/frappe.png" alt="Frappé">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€7.99</div>
+      <h3>Frappé</h3>
+      <p>Iced blended coffee topped with rich foam.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="cold">
+    <div class="menu-img-wrap">
+      <img src="images/caramellatte.png" alt="Caramel Latte">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€7.99</div>
+      <h3>Caramel Latte</h3>
+      <p>Latte drizzled with rich golden caramel sauce.</p>
+    </div>
+  </div>
+
+  <!-- SPECIAL -->
+  <div class="menu-card" data-category="special">
+    <div class="menu-img-wrap">
+      <img src="images/affogato.png" alt="Affogato">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€8.99</div>
+      <h3>Affogato</h3>
+      <p>Hot espresso poured over vanilla ice cream.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="special">
+    <div class="menu-img-wrap">
+      <img src="images/vienna.png" alt="Vienna Coffee">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€7.49</div>
+      <h3>Vienna Coffee</h3>
+      <p>Espresso topped with luscious whipped cream.</p>
+    </div>
+  </div>
+
+  <div class="menu-card" data-category="special">
+    <div class="menu-img-wrap">
+      <img src="images/irishcoffee.png" alt="Irish Coffee">
+    </div>
+    <div class="menu-card-info">
+      <div class="menu-price">€9.99</div>
+      <h3>Irish Coffee</h3>
+      <p>Espresso with a hint of whiskey and cream on top.</p>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
