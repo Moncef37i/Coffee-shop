@@ -114,29 +114,6 @@ function addToCart(name, price, img) {
   openCart();
 }
 
-// Hover overlay buttons
-document.querySelectorAll('.flavor-add-btn').forEach(b => {
-  b.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const card = b.closest('[data-name]');
-    addToCart(card.dataset.name, card.dataset.price, card.dataset.img);
-    b.textContent = '✓ Ajouté!';
-    setTimeout(() => b.textContent = '🛒 Ajouter au Panier', 1200);
-  });
-});
-
-// Bottom add-to-cart buttons
-document.querySelectorAll('.add-to-cart-btn').forEach(b => {
-  b.addEventListener('click', () => {
-    addToCart(b.dataset.name, b.dataset.price, b.dataset.img);
-    b.textContent = '✓ Ajouté!';
-    b.style.background = '#2d7a2d';
-    setTimeout(() => {
-      b.textContent = '+ Ajouter';
-      b.style.background = '';
-    }, 1200);
-  });
-});
 
 if (cartIcon)    cartIcon.addEventListener('click', openCart);
 if (cartClose)   cartClose.addEventListener('click', closeCart);
